@@ -1,0 +1,30 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    animation: slider 10s linear infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: 500px; /* Consider making this responsive */
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.main:hover {
+    cursor: url("./WhatsApp\ Image\ 2024-09-13\ at\ 11.54.39\ AM\ \(4\).jpeg"), auto; /* Make sure to have a fallback */
+}
